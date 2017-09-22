@@ -1,3 +1,5 @@
+import lombok.Data;
+
 class FooClass {
 
   private int unusedField; // Noncompliant [[sc=15;ec=26]] {{Remove this unused "unusedField" private field.}}
@@ -83,6 +85,10 @@ class ClassLevelAnnotations2 {
 }
 @lombok.Data
 class ClassLevelAnnotations3 {
+  private int foo; // Compliant
+}
+@Data
+class ClassLevelAnnotations3_1 {
   private int foo; // Compliant
 }
 @lombok.Value

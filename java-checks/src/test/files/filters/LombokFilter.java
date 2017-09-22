@@ -1,6 +1,7 @@
 import lombok.Data;
 
 @Data
+@lombok.AllArgsConstructor
 class DataImported { // NoIssue
   private int foo; // NoIssue
 }

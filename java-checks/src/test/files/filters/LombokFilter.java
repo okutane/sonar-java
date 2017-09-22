@@ -1,3 +1,10 @@
+import lombok.Data;
+
+@Data
+class DataImported { // NoIssue
+  private int foo; // NoIssue
+}
+
 class Fields {
   @lombok.Getter
   class Getter { // WithIssue

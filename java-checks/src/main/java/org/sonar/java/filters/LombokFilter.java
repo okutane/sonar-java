@@ -61,7 +61,7 @@ public class LombokFilter extends BaseTreeVisitorIssueFilter {
 
   private static final List<String> GENERATE_EQUALS = ImmutableList.<String>builder()
     .add("lombok.EqualsAndHashCode")
-    .add("lombok.Data")
+    //.add("lombok.Data")
     .add("lombok.Value")
     .build();
 
